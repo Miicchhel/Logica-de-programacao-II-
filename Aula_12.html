@@ -1,0 +1,28 @@
+<canvas width="600" height="400"></canvas>
+<!-- video30077289/brazzers_-_mommy_got_boobs_-_cena_de_fique_longe_da_minha_filha_estrelando_ava_addams_e_keiran_lee -->
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = '#dcdcdc';
+    pincel.fillRect(0,0,600,400);
+
+    function desenhaCirculo(x,y,raio){
+
+        pincel.fillStyle = 'orange';
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2*Math.PI);
+        pincel.fill()
+    }
+
+    function limpaTela(){
+        pincel.clearRect(0,0,600,400);
+    }
+
+    
+    limpaTela()
+    desenhaCirculo(10,20,10);
+        
+    
+</script>
