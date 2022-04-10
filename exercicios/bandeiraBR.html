@@ -1,0 +1,35 @@
+<canvas width="500" height="300"></canvas>
+
+<script>
+    //montando tela e pincel
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    //retangulo
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0,0,500,270);
+
+    //triângulo esquerdo
+    pincel.fillStyle = 'yellow';
+    pincel.beginPath();
+    pincel.moveTo(20,135);
+    pincel.lineTo(250,20);
+    pincel.lineTo(250,250);
+    pincel.fill();
+
+    //triângulo direito
+    pincel.beginPath();
+    pincel.moveTo(480,135);
+    pincel.lineTo(250,20);
+    pincel.lineTo(250,250);
+    pincel.fill();
+
+    //círculo
+    pincel.fillStyle = 'darkblue';
+    pincel.beginPath();
+    pincel.arc(250,135,80,0,2*3.14);
+    pincel.fill();
+
+
+
+</script>
